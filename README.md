@@ -5,14 +5,20 @@ Biological ID translator with merging to the original data frame
  for easier downstream analysis
 
 Dependencies:
-This package depends on the ClusterProfiler (4.4.4) function of BiTR, that can
-  be installed using BiocManager::install("clusterProfiler")
-  and package for Genome wide annotation for human (default, "org.Hs.eg.db"),
-  and can be installed using BiocManager::install("org.Hs.eg.db")
+This package depends on the (1) ClusterProfiler (4.4.4) function of BiTR, that can
+  be installed using BiocManager::install("clusterProfiler");
+  (2) package for Genome wide annotation for human (default, "org.Hs.eg.db"),
+  and can be installed using BiocManager::install("org.Hs.eg.db"); and (3) dplyr for data manipulation. 
 
-@param input an R object/data frame that can be coercible to df
-@param colName string; column name containing the ids. 
-@param fromType string; the name of column that has to be converted; it must be one of types supported by BiTR
-@param toType String; desired output; it must be one of types supported by BiTR
-@param rm.duplicates Boolean; Duplicated names to be removed or not. 
-@param moveToFirst if True, the new column will be moved to be the first column in the new df; default is FALSE
+@param input an R object/data frame that can be coercible to df;
+
+@param colName string; column name containing the ids;
+
+@param fromType string; the name of column that has to be converted; it must be one of types supported by BiTR;
+
+@param toType String; desired output; it must be one of types supported by BiTR;
+
+@param rm.duplicates Boolean; Duplicated names to be removed or not;
+
+@param moveToFirst if True, the new column will be moved to be the first column in the new df; default is FALSE.
+
