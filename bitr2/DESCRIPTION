@@ -1,0 +1,17 @@
+Package: bitr2
+Title: It translate biological ids
+Version: 0.0.0.9000
+Authors@R: 
+    person("ayaz", "anwar", , "ayazanwar@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Traditionally, the BITR works on single vector and returns the file with two vectors. Oftenly, it is desirable that
+		the translated column should be appended to the original data. BITR2 does this with removal of duplicated IDs.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports:
+	clusterProfiler (>= 4.4.4),
+	org.Hs.eg.db (>= 3.15.0),
+	dplyr
