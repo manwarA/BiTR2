@@ -22,3 +22,6 @@ This package depends on the (1) ClusterProfiler (4.4.4) function of BiTR, that c
 
 @param moveToFirst if True, the new column will be moved to be the first column in the new df; default is FALSE.
 
+Note:
+Instead of this function, biomaRt is a lot better and cover more annotation types. However, it needs active internet connection, and sometimes, it can be problematic. The link to biomaRt package can be found below:
+https://bioconductor.org/packages/release/bioc/html/biomaRt.html
