@@ -7,7 +7,8 @@
 #'  This package depends on the ClusterProfiler (4.4.4) function of BiTR, that can
 #'  be installed using BiocManager::install("clusterProfiler")
 #'  and package for Genome wide annotation for human (default, "org.Hs.eg.db"),
-#'  and can be installed using BiocManager::install("org.Hs.eg.db")
+#'  and can be installed using BiocManager::install("org.Hs.eg.db").
+#'  It also depends on library(magrittr) to use the %>% operator.
 
 #' @param input an R object/data frame that can be coercible to df
 #' @param colName string; column name containing the ids. 
@@ -26,7 +27,6 @@ require(org.Hs.eg.db)
 # The default organism. 
 organism = "org.Hs.eg.db"
  
-
 idTypes <- c('ACCNUM', 'ALIAS', 'ENSEMBL', 'ENSEMBLPROT', 'ENSEMBLTRANS', 'ENTREZID',
              'ENZYME', 'EVIDENCE', 'EVIDENCEALL', 'GENENAME', 'GENETYPE', 'GO',
              'GOALL', 'IPI', 'MAP', 'OMIM', 'ONTOLOGY', 'ONTOLOGYALL', 'PATH', 
@@ -124,4 +124,5 @@ convertedID = as.data.frame(convertedID)
     df
 
 }
+
 
