@@ -16,8 +16,14 @@
 #' @param rm.duplicates Boolean; Duplicated names to be removed or not. 
 #' @param moveToFirst if True, the new column will be moved to be the first column in the new df; default is FALSE
 
+# librarsies
+require(clusterProfiler)
+require(magrittr)
+require(org.Hs.eg.db)
+
 '%notin' <- Negate("%in%")
 
+# The default organism. 
 organism = "org.Hs.eg.db"
  
 
@@ -118,3 +124,4 @@ convertedID = as.data.frame(convertedID)
     df
 
 }
+
